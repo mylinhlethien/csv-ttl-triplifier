@@ -31,22 +31,28 @@ This is an example of how to list things you need to use the software and how to
 ### Installation
 
 1. install python3 and pip command
+
+
 2. In the directory of the project
 ```sh
    python3 -m venv env
-   ```
-3. ```sh
-   source env/bin/activate
-   ```
-4. ```sh
-   pip install flask
-   ```
+```
 
-5. ```sh
+3. 
+```sh
+   source env/bin/activate
+```
+4. 
+```sh
+   pip install flask
+```
+
+5. 
+```sh
    export FLASK_APP=app.py
    export FLASK_ENV=development
    flask run
-   ```
+```
 or if you use a Windows environment:
 ```sh
    set FLASK_APP=app.py
