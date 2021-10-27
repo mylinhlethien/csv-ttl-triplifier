@@ -12,8 +12,8 @@ Describe project here
 ### Built With
 
 
-* [Python](https://nextjs.org/)
-* [Flask](https://reactjs.org/)
+* [Python](https://www.python.org/)
+* [Flask](https://flask.palletsprojects.com/en/2.0.x/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
