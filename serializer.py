@@ -1,7 +1,24 @@
 import csv
-import sys
+import re
 
-def serializeToTurtle(outPath, values, prefixData="http://ex.org/data", prefixPredicate="http://ex.org/pred#"):
+
+def sanitized(string: str):
+    '''
+    A function that takes a string and returns a sanitized version of it.
+    The function first removes spaces between words and capitalizes the first letter of each word.
+    Then, non-alphanumeric characters are replaced with underscores.
+    '''
+    return re.sub('[^0-9a-zA-Z]+', '_', string.strip().title().replace(' ', ''))
+
+
+def escapeQuotes(string):
+    '''
+    Removes quotes in a string.
+    '''
+    return string.replace('"', '')
+
+
+def serializeToTurtle(outPath, values, prefixData="http://ex.org/data", prefixPredicate="http://ex.org/pred#", elementTitlePredicateName="title"):
     '''
     A function that takes the following parameters:
     - outPath: path to the output file
@@ -15,10 +32,12 @@ def serializeToTurtle(outPath, values, prefixData="http://ex.org/data", prefixPr
     For example, for the following input:
     {
         '1': {
+            'id': '1',
             'column1': 'a',
             'column2': 'b'
         },
         '2': {
+            'id': '2',
             'column1': 'c',
             'column2': 'd'
         }
@@ -26,19 +45,27 @@ def serializeToTurtle(outPath, values, prefixData="http://ex.org/data", prefixPr
     The resulting turtle file would be:
     @prefix : <http://ex.org/data> .
     @prefix pred: <http://ex.org/pred#> .
-    :1 :column1 "a" ;
+    :1  :id "1" ;
+        :column1 "a" ;
         :column2 "b" .
-    :2  :column1 "c" ;
+    :2  :id "2" ;  
+        :column1 "c" ;
         :column2 "d" .
     '''
     with open(outPath, 'w', encoding='utf-8') as f:
         f.write('@prefix : <{}> .\n'.format(prefixData))
         f.write('@prefix pred: <{}> .\n\n'.format(prefixPredicate))
         for i, key in enumerate(values):
-            f.write(':{} '.format(key))
+            sanitizedKey = sanitized(key)
+            f.write(':{} '.format(sanitizedKey))
+            f.write('pred:{} "{}" ;\n'.format(
+                sanitized(elementTitlePredicateName), escapeQuotes(key)))
             for title in values[key]:
-                f.write('pred:{} "{}" {}\n'.format(title, values[key][title], '.' if i == len(values) - 1 else ';'))
+                sanitizedTitle = sanitized(title)
+                f.write('pred:{} "{}" {}\n'.format(sanitizedTitle, escapeQuotes(
+                    values[key][title]), '.' if i == len(values) - 1 else ';'))
             f.write('\n')
+
 
 def processCSV(filePath, withTitles=True, delimiter=',', titleLine=1, dataLine=2):
     '''
@@ -53,7 +80,9 @@ def processCSV(filePath, withTitles=True, delimiter=',', titleLine=1, dataLine=2
     and before the title line (which is optional, specified by withTitles).
 
 
-    The function reads the CSV values and returns a dictionary with the following structure:
+    The function reads the CSV values and returns a tuple with the following elements:
+    * title of the first column
+    * dictionary with the following structure:
     - keys: the value of the first column
     - values: a dictionary with the following structure:
         - keys: the titles of the rest of the columns (if no title, column name is col1, col2, etc.)
@@ -67,10 +96,12 @@ def processCSV(filePath, withTitles=True, delimiter=',', titleLine=1, dataLine=2
     The value returned by the function is:
     {
         '1': {
+            'id': '1',
             'column1': 'a',
             'column2': 'b'
         },
         '2': {
+            'id': '2',
             'column1': 'c',
             'column2': 'd'
         }
@@ -92,10 +123,10 @@ def processCSV(filePath, withTitles=True, delimiter=',', titleLine=1, dataLine=2
         for i in range(1, len(line)):
             values[line[0]][titles[i]] = line[i]
 
-    return values
+    return (titles[0], values)
 
 
-values = processCSV("test/test4.csv", withTitles=True,
-                    delimiter=',', titleLine=1, dataLine=2)
+title, values = processCSV("test/test4.csv", withTitles=True,
+                           delimiter=',', titleLine=1, dataLine=2)
 
-serializeToTurtle("test/test4.ttl", values)
+serializeToTurtle("test/test4.ttl", values, elementTitlePredicateName=title)
