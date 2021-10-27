@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}<h1>CSV to TTL</h1>
+
+<button class="btn" onclick="document.getElementById('getFile').click()">Choose file</button>
+<input type='file' id="getFile" style="display:none" accept=".csv">
+
+<div class="container">
+    <h3>Parameters</h3>
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Choose parameters</button>
+    <div id="demo" class="collapse">
+        <p>Title line</p>
+        <p>Separator</p>
+        <p>First data line</p>
+    </div>
+</div>
+
+<button
+        type="button"
+        class="btn">
+    CONVERT
+</button>
+{% endblock %}
