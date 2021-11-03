@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 
-{% block title %}Home{% endblock %}
+{% block title %}CSV to TTL Converter{% endblock %}
 
-{% block content %}<h1>CSV to TTL</h1>
+{% block content %}<h1>CSV to TTL Converter</h1>
 
 <button class="btn" onclick="document.getElementById('getFile').click()">Choose file</button>
 <input type='file' id="getFile" style="display:none" accept=".csv">
@@ -11,15 +11,32 @@
     <h3>Parameters</h3>
     <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Choose parameters</button>
     <div id="demo" class="collapse">
-        <p>Title line</p>
-        <p>Separator</p>
-        <p>First data line</p>
+        <form action="" method="get" class="form-example">
+            <div class="form-example">
+                <label for="title_line">Title line: </label>
+                <input type="number" name="title_line" id="title_line" min="0">
+            </div>
+            <div class="form-example">
+                <label for="separator">Separator: </label>
+                <select name="separator" id="separator">
+                    <option value="space">space </option>
+                    <option value="tab">tab </option>
+                    <option value="comma" selected>comma ,</option>
+                    <option value="semicolon">semicolon ;</option>
+                    <option value="verticalbar">Vertical bar |</option>
+                </select>
+            </div>
+            <div class="form-example">
+                <label for="first_line">First data line: </label>
+                <input type="number" name="first_line" id="first_line" min="0">
+            </div>
+        </form>
     </div>
 </div>
 
 <button
-        type="button"
-        class="btn">
+        type="submit"
+        class="btn btn-success">
     CONVERT
 </button>
 {% endblock %}
