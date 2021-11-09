@@ -3,22 +3,36 @@
 {% block title %}CSV to TTL Converter{% endblock %}
 
 {% block content %}
-<h1>CSV to TTL Converter</h1>
 
 <div style="margin: 3%;">
+    <h1>CSV to TTL Converter</h1>
 
+    <form action="{{ url_for('convertFile') }}" method="post" class="form-example" enctype="multipart/form-data">
+        <!--<button class=" btn" onclick="document.getElementById('getFile').click()">Choose file</button>-->
+        <input type='file' name="file" id="getFile" accept=".csv" required>
 
-    <button class="btn" onclick="document.getElementById('getFile').click()">Choose file</button>
-    <input type='file' id="getFile" style="display:none" accept=".csv">
+        <div>
+            <h3>Parameters</h3>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Choose parameters</button>
+            <div id="demo" class="collapse">
 
-    <div class="container">
-        <h3>Parameters</h3>
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Choose parameters</button>
-        <div id="demo" class="collapse">
-            <form action="" method="get" class="form-example">
+                <div>
+                    <input type="checkbox" id="withTitles" name="withTitles" value="withTitles" checked onchange="checkboxOnChange();">
+                    <label for="withTitles">Does this CSV file have a title line?</label>
+                </div>
+                <script type="text/javascript">
+                    function checkboxOnChange() {
+                        if (document.getElementById("withTitles").checked) {
+                            document.getElementById("title_line").disabled = false;
+                        }
+                        else if (!document.getElementById("withTitles").checked) {
+                            document.getElementById("title_line").disabled = true;
+                        }
+                    }
+                </script>
                 <div class="form-example">
                     <label for="title_line">Title line: </label>
-                    <input type="number" name="title_line" id="title_line" min="0">
+                    <input type="number" name="title_line" id="title_line" min="0" value="0">
                 </div>
                 <div class="form-example">
                     <label for="separator">Separator: </label>
@@ -32,16 +46,18 @@
                 </div>
                 <div class="form-example">
                     <label for="first_line">First data line: </label>
-                    <input type="number" name="first_line" id="first_line" min="0">
+                    <input type="number" name="first_line" id="first_line" min="0" value="0">
                 </div>
-            </form>
+
+
+            </div>
         </div>
-    </div>
-    <button
-            type="submit"
-            class="btn btn-success">
-        CONVERT
-    </button>
+        <button
+                type="submit"
+                class="btn btn-success">
+            CONVERT
+        </button>
+    </form>
 </div>
 
 {% endblock %}
