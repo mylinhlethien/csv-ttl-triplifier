@@ -31,7 +31,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:AkademiaNauk pred:Name "Akademia Nauk" ;
+:Akademia_Nauk pred:Name "Akademia Nauk" ;
 pred:Country "Russia" ;
 pred:Region "Kamchatka" ;
 pred:Latitude "53.98" ;
@@ -221,7 +221,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:AxialSeamount pred:Name "Axial Seamount" ;
+:Axial_Seamount pred:Name "Axial Seamount" ;
 pred:Country "Pacific Ocean" ;
 pred:Region "Pacific-NE" ;
 pred:Latitude "45.95" ;
@@ -271,7 +271,7 @@ pred:Type "Lava cone" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:BandaApi pred:Name "Banda Api" ;
+:Banda_Api pred:Name "Banda Api" ;
 pred:Country "Pacific Ocean" ;
 pred:Region "Banda Sea" ;
 pred:Latitude "-4.525" ;
@@ -281,7 +281,7 @@ pred:Type "Caldera" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:BarrenIsland pred:Name "Barren Island" ;
+:Barren_Island pred:Name "Barren Island" ;
 pred:Country "India" ;
 pred:Region "Andaman Is-Indian O" ;
 pred:Latitude "12.292" ;
@@ -301,7 +301,7 @@ pred:Type "Caldera" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:BayonnaiseRocks pred:Name "Bayonnaise Rocks" ;
+:Bayonnaise_Rocks pred:Name "Bayonnaise Rocks" ;
 pred:Country "Japan" ;
 pred:Region "Izu Is-Japan" ;
 pred:Latitude "31.92" ;
@@ -371,7 +371,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:Carran_LosVenados pred:Name "Carran-Los Venados" ;
+:Carran_Los_Venados pred:Name "Carran-Los Venados" ;
 pred:Country "Chile" ;
 pred:Region "Chile-C" ;
 pred:Latitude "-40.35" ;
@@ -421,7 +421,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:Chillan_NevadosDe pred:Name "Chillan, Nevados de" ;
+:Chillan_Nevados_De pred:Name "Chillan, Nevados de" ;
 pred:Country "Chile" ;
 pred:Region "Chile-C" ;
 pred:Latitude "-36.863" ;
@@ -461,7 +461,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:CleftSegment pred:Name "Cleft Segment" ;
+:Cleft_Segment pred:Name "Cleft Segment" ;
 pred:Country "Pacific Ocean" ;
 pred:Region "Pacific-NE" ;
 pred:Latitude "44.83" ;
@@ -481,7 +481,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:CoaxialSegment pred:Name "CoAxial Segment" ;
+:Coaxial_Segment pred:Name "CoAxial Segment" ;
 pred:Country "Pacific Ocean" ;
 pred:Region "Pacific-NE" ;
 pred:Latitude "46.52" ;
@@ -501,7 +501,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:Colo_UnaUna_ pred:Name "Colo [Una Una]" ;
+:Colo_Una_Una_ pred:Name "Colo [Una Una]" ;
 pred:Country "Indonesia" ;
 pred:Region "Sulawesi-Indonesia" ;
 pred:Latitude "-0.17" ;
@@ -541,7 +541,7 @@ pred:Type "Submarine volcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:DeceptionIsland pred:Name "Deception Island" ;
+:Deception_Island pred:Name "Deception Island" ;
 pred:Country "Antarctica" ;
 pred:Region "Antarctica" ;
 pred:Latitude "-62.97" ;
@@ -571,7 +571,7 @@ pred:Type "Compound volcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:DiengVolcComplex pred:Name "Dieng Volc Complex" ;
+:Dieng_Volc_Complex pred:Name "Dieng Volc Complex" ;
 pred:Country "Indonesia" ;
 pred:Region "Java" ;
 pred:Latitude "-7.2" ;
@@ -591,7 +591,7 @@ pred:Type "Complex volcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:EasternGeminiSeamount pred:Name "Eastern Gemini Seamount" ;
+:Eastern_Gemini_Seamount pred:Name "Eastern Gemini Seamount" ;
 pred:Country "Pacific Ocean" ;
 pred:Region "SW Pacific" ;
 pred:Latitude "-20.98" ;
@@ -651,7 +651,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:ErtaAle pred:Name "Erta Ale" ;
+:Erta_Ale pred:Name "Erta Ale" ;
 pred:Country "Ethiopia" ;
 pred:Region "Africa-NE" ;
 pred:Latitude "13.6" ;
@@ -681,7 +681,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:FarallonDePajaros pred:Name "Farallon de Pajaros" ;
+:Farallon_De_Pajaros pred:Name "Farallon de Pajaros" ;
 pred:Country "United States" ;
 pred:Region "Mariana Is-C Pacific" ;
 pred:Latitude "20.53" ;
@@ -711,7 +711,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:Fournaise_PitonDeLa pred:Name "Fournaise, Piton de la" ;
+:Fournaise_Piton_De_La pred:Name "Fournaise, Piton de la" ;
 pred:Country "Reunion" ;
 pred:Region "Indian O-W" ;
 pred:Latitude "-21.229" ;
@@ -751,7 +751,7 @@ pred:Type "Submarine volcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:GalapagosRift pred:Name "Galapagos Rift" ;
+:Galapagos_Rift pred:Name "Galapagos Rift" ;
 pred:Country "Pacific Ocean" ;
 pred:Region "Pacific-E" ;
 pred:Latitude "0.792" ;
@@ -831,7 +831,7 @@ pred:Type "Caldera" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:GreatSitkin pred:Name "Great Sitkin" ;
+:Great_Sitkin pred:Name "Great Sitkin" ;
 pred:Country "United States" ;
 pred:Region "Aleutian Is" ;
 pred:Latitude "52.08" ;
@@ -851,7 +851,7 @@ pred:Type "Caldera" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:GroznyGroup pred:Name "Grozny Group" ;
+:Grozny_Group pred:Name "Grozny Group" ;
 pred:Country "Russia" ;
 pred:Region "Kuril Is" ;
 pred:Latitude "45.02" ;
@@ -861,7 +861,7 @@ pred:Type "Complex volcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:GuaguaPichincha pred:Name "Guagua Pichincha" ;
+:Guagua_Pichincha pred:Name "Guagua Pichincha" ;
 pred:Country "Ecuador" ;
 pred:Region "Ecuador" ;
 pred:Latitude "-0.171" ;
@@ -891,7 +891,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:HomeReef pred:Name "Home Reef" ;
+:Home_Reef pred:Name "Home Reef" ;
 pred:Country "Tonga" ;
 pred:Region "Tonga-SW Pacific" ;
 pred:Latitude "-18.992" ;
@@ -911,7 +911,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:HungaTonga_HungaHa_Apai pred:Name "Hunga Tonga-Hunga Ha'apai" ;
+:Hunga_Tonga_Hunga_Ha_Apai pred:Name "Hunga Tonga-Hunga Ha'apai" ;
 pred:Country "Tonga" ;
 pred:Region "Tonga-SW Pacific" ;
 pred:Latitude "-20.57" ;
@@ -1031,7 +1031,7 @@ pred:Type "Pyroclastic cone" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:JanMayen pred:Name "Jan Mayen" ;
+:Jan_Mayen pred:Name "Jan Mayen" ;
 pred:Country "Jan Mayen" ;
 pred:Region "Atlantic-N-Jan Mayen" ;
 pred:Latitude "71.08" ;
@@ -1041,7 +1041,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:KaitokuSeamount pred:Name "Kaitoku Seamount" ;
+:Kaitoku_Seamount pred:Name "Kaitoku Seamount" ;
 pred:Country "Japan" ;
 pred:Region "Volcano Is-Japan" ;
 pred:Latitude "26.122" ;
@@ -1061,7 +1061,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:Karangetang_ApiSiau_ pred:Name "Karangetang [Api Siau]" ;
+:Karangetang_Api_Siau_ pred:Name "Karangetang [Api Siau]" ;
 pred:Country "Indonesia" ;
 pred:Region "Sangihe Is-Indonesia" ;
 pred:Latitude "2.78" ;
@@ -1211,7 +1211,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:KolokolGroup pred:Name "Kolokol Group" ;
+:Kolokol_Group pred:Name "Kolokol Group" ;
 pred:Country "Russia" ;
 pred:Region "Kuril Is" ;
 pred:Latitude "46.042" ;
@@ -1271,7 +1271,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:KujuGroup pred:Name "Kuju Group" ;
+:Kuju_Group pred:Name "Kuju Group" ;
 pred:Country "Japan" ;
 pred:Region "Kyushu-Japan" ;
 pred:Latitude "33.08" ;
@@ -1321,7 +1321,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:LaPalma pred:Name "La Palma" ;
+:La_Palma pred:Name "La Palma" ;
 pred:Country "Spain" ;
 pred:Region "Canary Is" ;
 pred:Latitude "28.58" ;
@@ -1371,7 +1371,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:Lengai_OlDoinyo pred:Name "Lengai, Ol Doinyo" ;
+:Lengai_Ol_Doinyo pred:Name "Lengai, Ol Doinyo" ;
 pred:Country "Tanzania" ;
 pred:Region "Africa-E" ;
 pred:Latitude "-2.751" ;
@@ -1391,7 +1391,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:LewotobiPerempuan pred:Name "Lewotobi Perempuan" ;
+:Lewotobi_Perempuan pred:Name "Lewotobi Perempuan" ;
 pred:Country "Indonesia" ;
 pred:Region "Lesser Sunda Is" ;
 pred:Latitude "-8.575" ;
@@ -1431,7 +1431,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:LongIsland pred:Name "Long Island" ;
+:Long_Island pred:Name "Long Island" ;
 pred:Country "Papua New Guinea" ;
 pred:Region "New Guinea-NE of" ;
 pred:Latitude "-5.358" ;
@@ -1531,7 +1531,7 @@ pred:Type "Shield volcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:MarionIsland pred:Name "Marion Island" ;
+:Marion_Island pred:Name "Marion Island" ;
 pred:Country "South Africa" ;
 pred:Region "Indian O-S" ;
 pred:Latitude "-46.9" ;
@@ -1551,7 +1551,7 @@ pred:Type "Caldera" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:MaunaLoa pred:Name "Mauna Loa" ;
+:Mauna_Loa pred:Name "Mauna Loa" ;
 pred:Country "United States" ;
 pred:Region "Hawaiian Is" ;
 pred:Latitude "19.475" ;
@@ -1571,7 +1571,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:McdonaldIslands pred:Name "McDonald Islands" ;
+:Mcdonald_Islands pred:Name "McDonald Islands" ;
 pred:Country "Indian Ocean" ;
 pred:Region "Indian O-S" ;
 pred:Latitude "-53.03" ;
@@ -1601,7 +1601,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:MetisShoal pred:Name "Metis Shoal" ;
+:Metis_Shoal pred:Name "Metis Shoal" ;
 pred:Country "Tonga" ;
 pred:Region "Tonga-SW Pacific" ;
 pred:Latitude "-19.18" ;
@@ -1631,7 +1631,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:MonowaiSeamount pred:Name "Monowai Seamount" ;
+:Monowai_Seamount pred:Name "Monowai Seamount" ;
 pred:Country "New Zealand" ;
 pred:Region "Kermadec Is" ;
 pred:Latitude "-25.887" ;
@@ -1721,7 +1721,7 @@ pred:Type "Shield volcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:NorthGordaRidge pred:Name "North Gorda Ridge" ;
+:North_Gorda_Ridge pred:Name "North Gorda Ridge" ;
 pred:Country "Pacific Ocean" ;
 pred:Region "Pacific-NE" ;
 pred:Latitude "42.67" ;
@@ -1831,7 +1831,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:PeuetSague pred:Name "Peuet Sague" ;
+:Peuet_Sague pred:Name "Peuet Sague" ;
 pred:Country "Indonesia" ;
 pred:Region "Sumatra" ;
 pred:Latitude "4.914" ;
@@ -1931,7 +1931,7 @@ pred:Type "Lava dome" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:RaoulIsland pred:Name "Raoul Island" ;
+:Raoul_Island pred:Name "Raoul Island" ;
 pred:Country "New Zealand" ;
 pred:Region "Kermadec Is" ;
 pred:Latitude "-29.27" ;
@@ -1981,7 +1981,7 @@ pred:Type "Submarine volcanoes" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:RinconDeLaVieja pred:Name "Rincon de la Vieja" ;
+:Rincon_De_La_Vieja pred:Name "Rincon de la Vieja" ;
 pred:Country "Costa Rica" ;
 pred:Region "Costa Rica" ;
 pred:Latitude "10.83" ;
@@ -2001,7 +2001,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:RitterIsland pred:Name "Ritter Island" ;
+:Ritter_Island pred:Name "Ritter Island" ;
 pred:Country "Papua New Guinea" ;
 pred:Region "New Guinea-NE of" ;
 pred:Latitude "-5.52" ;
@@ -2041,7 +2041,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:RumbleIii pred:Name "Rumble III" ;
+:Rumble_Iii pred:Name "Rumble III" ;
 pred:Country "New Zealand" ;
 pred:Region "New Zealand" ;
 pred:Latitude "-35.745" ;
@@ -2071,7 +2071,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:SanCristobal pred:Name "San Cristobal" ;
+:San_Cristobal pred:Name "San Cristobal" ;
 pred:Country "Nicaragua" ;
 pred:Region "Nicaragua" ;
 pred:Latitude "12.702" ;
@@ -2081,7 +2081,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:SanMiguel pred:Name "San Miguel" ;
+:San_Miguel pred:Name "San Miguel" ;
 pred:Country "El Salvador" ;
 pred:Region "El Salvador" ;
 pred:Latitude "13.431" ;
@@ -2101,7 +2101,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:SangeangApi pred:Name "Sangeang Api" ;
+:Sangeang_Api pred:Name "Sangeang Api" ;
 pred:Country "Indonesia" ;
 pred:Region "Lesser Sunda Is" ;
 pred:Latitude "-8.18" ;
@@ -2111,7 +2111,7 @@ pred:Type "Complex volcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:SantaMaria pred:Name "Santa Maria" ;
+:Santa_Maria pred:Name "Santa Maria" ;
 pred:Country "Guatemala" ;
 pred:Region "Guatemala" ;
 pred:Latitude "14.756" ;
@@ -2121,7 +2121,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:SarychevPeak pred:Name "Sarychev Peak" ;
+:Sarychev_Peak pred:Name "Sarychev Peak" ;
 pred:Country "Russia" ;
 pred:Region "Kuril Is" ;
 pred:Latitude "48.092" ;
@@ -2241,7 +2241,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:SoufriereGuadeloupe pred:Name "Soufriere Guadeloupe" ;
+:Soufriere_Guadeloupe pred:Name "Soufriere Guadeloupe" ;
 pred:Country "Guadeloupe" ;
 pred:Region "W Indies" ;
 pred:Latitude "16.05" ;
@@ -2251,7 +2251,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:SoufriereHills pred:Name "Soufriere Hills" ;
+:Soufriere_Hills pred:Name "Soufriere Hills" ;
 pred:Country "Montserrat" ;
 pred:Region "W Indies" ;
 pred:Latitude "16.72" ;
@@ -2261,7 +2261,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:SoufriereSt_Vincent pred:Name "Soufriere St. Vincent" ;
+:Soufriere_St_Vincent pred:Name "Soufriere St. Vincent" ;
 pred:Country "St. Vincent & the Grenadines" ;
 pred:Region "W Indies" ;
 pred:Latitude "13.33" ;
@@ -2311,7 +2311,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:SupplyReef pred:Name "Supply Reef" ;
+:Supply_Reef pred:Name "Supply Reef" ;
 pred:Country "United States" ;
 pred:Region "Mariana Is-C Pacific" ;
 pred:Latitude "20.13" ;
@@ -2401,7 +2401,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:TenggerCaldera pred:Name "Tengger Caldera" ;
+:Tengger_Caldera pred:Name "Tengger Caldera" ;
 pred:Country "Indonesia" ;
 pred:Region "Java" ;
 pred:Latitude "-7.942" ;
@@ -2421,7 +2421,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:ThuleIslands pred:Name "Thule Islands" ;
+:Thule_Islands pred:Name "Thule Islands" ;
 pred:Country "Antarctica" ;
 pred:Region "Antarctica" ;
 pred:Latitude "-59.45" ;
@@ -2531,7 +2531,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:UkinrekMaars pred:Name "Ukinrek Maars" ;
+:Ukinrek_Maars pred:Name "Ukinrek Maars" ;
 pred:Country "United States" ;
 pred:Region "Alaska Peninsula" ;
 pred:Latitude "57.83" ;
@@ -2631,7 +2631,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D1" ;
 
-:WhiteIsland pred:Name "White Island" ;
+:White_Island pred:Name "White Island" ;
 pred:Country "New Zealand" ;
 pred:Region "New Zealand" ;
 pred:Latitude "-37.52" ;
@@ -2751,7 +2751,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:BabuyanClaro pred:Name "Babuyan Claro" ;
+:Babuyan_Claro pred:Name "Babuyan Claro" ;
 pred:Country "Philippines" ;
 pred:Region "Luzon-N of" ;
 pred:Latitude "19.523" ;
@@ -2771,7 +2771,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:BanuaWuhu pred:Name "Banua Wuhu" ;
+:Banua_Wuhu pred:Name "Banua Wuhu" ;
 pred:Country "Indonesia" ;
 pred:Region "Sangihe Is-Indonesia" ;
 pred:Latitude "3.138" ;
@@ -2841,7 +2841,7 @@ pred:Type "Compound volcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:BristolIsland pred:Name "Bristol Island" ;
+:Bristol_Island pred:Name "Bristol Island" ;
 pred:Country "Antarctica" ;
 pred:Region "Antarctica" ;
 pred:Latitude "-59.03" ;
@@ -2871,7 +2871,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:CandlemasIsland pred:Name "Candlemas Island" ;
+:Candlemas_Island pred:Name "Candlemas Island" ;
 pred:Country "Antarctica" ;
 pred:Region "Antarctica" ;
 pred:Latitude "-57.08" ;
@@ -2881,7 +2881,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:Cendres_IleDes pred:Name "Cendres, Ile des" ;
+:Cendres_Ile_Des pred:Name "Cendres, Ile des" ;
 pred:Country "Vietnam" ;
 pred:Region "SE Asia" ;
 pred:Latitude "10.158" ;
@@ -2901,7 +2901,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:CordonCaulle pred:Name "Cordon Caulle" ;
+:Cordon_Caulle pred:Name "Cordon Caulle" ;
 pred:Country "Chile" ;
 pred:Region "Chile-C" ;
 pred:Latitude "-40.52" ;
@@ -2941,7 +2941,7 @@ pred:Type "Explosion crater" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:DescabezadoGrande pred:Name "Descabezado Grande" ;
+:Descabezado_Grande pred:Name "Descabezado Grande" ;
 pred:Country "Chile" ;
 pred:Region "Chile-C" ;
 pred:Latitude "-35.58" ;
@@ -2951,7 +2951,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:Dhamar_HarrasOf pred:Name "Dhamar, Harras of" ;
+:Dhamar_Harras_Of pred:Name "Dhamar, Harras of" ;
 pred:Country "Yemen" ;
 pred:Region "Arabia-S" ;
 pred:Latitude "14.57" ;
@@ -2961,7 +2961,7 @@ pred:Type "Volcanic field" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:DonaJuana pred:Name "Dona Juana" ;
+:Dona_Juana pred:Name "Dona Juana" ;
 pred:Country "Colombia" ;
 pred:Region "Colombia" ;
 pred:Latitude "1.47" ;
@@ -3001,7 +3001,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:FalconIsland pred:Name "Falcon Island" ;
+:Falcon_Island pred:Name "Falcon Island" ;
 pred:Country "Tonga" ;
 pred:Region "Tonga-SW Pacific" ;
 pred:Latitude "-20.32" ;
@@ -3051,7 +3051,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:GoriaschaiaSopka pred:Name "Goriaschaia Sopka" ;
+:Goriaschaia_Sopka pred:Name "Goriaschaia Sopka" ;
 pred:Country "Russia" ;
 pred:Region "Kuril Is" ;
 pred:Latitude "46.83" ;
@@ -3091,7 +3091,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:HunterIsland pred:Name "Hunter Island" ;
+:Hunter_Island pred:Name "Hunter Island" ;
 pred:Country "Pacific Ocean" ;
 pred:Region "SW Pacific" ;
 pred:Latitude "-22.4" ;
@@ -3181,7 +3181,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:KarpinskyGroup pred:Name "Karpinsky Group" ;
+:Karpinsky_Group pred:Name "Karpinsky Group" ;
 pred:Country "Russia" ;
 pred:Region "Kuril Is" ;
 pred:Latitude "50.13" ;
@@ -3291,7 +3291,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:KunlunVolcGroup pred:Name "Kunlun Volc Group" ;
+:Kunlun_Volc_Group pred:Name "Kunlun Volc Group" ;
 pred:Country "China" ;
 pred:Region "China-W" ;
 pred:Latitude "35.52" ;
@@ -3321,7 +3321,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:LassenVolcCenter pred:Name "Lassen Volc Center" ;
+:Lassen_Volc_Center pred:Name "Lassen Volc Center" ;
 pred:Country "United States" ;
 pred:Region "US-California" ;
 pred:Latitude "40.492" ;
@@ -3391,7 +3391,7 @@ pred:Type "Caldera" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:MalySemiachik pred:Name "Maly Semiachik" ;
+:Maly_Semiachik pred:Name "Maly Semiachik" ;
 pred:Country "Russia" ;
 pred:Region "Kamchatka" ;
 pred:Latitude "54.13" ;
@@ -3421,7 +3421,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:MatthewIsland pred:Name "Matthew Island" ;
+:Matthew_Island pred:Name "Matthew Island" ;
 pred:Country "Pacific Ocean" ;
 pred:Region "SW Pacific" ;
 pred:Latitude "-22.33" ;
@@ -3481,7 +3481,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:MonacoBank pred:Name "Monaco Bank" ;
+:Monaco_Bank pred:Name "Monaco Bank" ;
 pred:Country "Portugal" ;
 pred:Region "Azores" ;
 pred:Latitude "37.6" ;
@@ -3521,7 +3521,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:NegroDeMayasquer_Cerro pred:Name "Negro de Mayasquer, Cerro" ;
+:Negro_De_Mayasquer_Cerro pred:Name "Negro de Mayasquer, Cerro" ;
 pred:Country "Ecuador" ;
 pred:Region "Colombia" ;
 pred:Latitude "0.828" ;
@@ -3531,7 +3531,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Holocene" ;
 pred:Last "D2" ;
 
-:NemoPeak pred:Name "Nemo Peak" ;
+:Nemo_Peak pred:Name "Nemo Peak" ;
 pred:Country "Russia" ;
 pred:Region "Kuril Is" ;
 pred:Latitude "49.57" ;
@@ -3551,7 +3551,7 @@ pred:Type "Caldera" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:OrmusIslands pred:Name "Ormus Islands" ;
+:Ormus_Islands pred:Name "Ormus Islands" ;
 pred:Country "Indian Ocean" ;
 pred:Region "Arabia-S" ;
 pred:Latitude "26" ;
@@ -3581,7 +3581,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:ParicutinVolcanicField pred:Name "Paricutin Volcanic Field" ;
+:Paricutin_Volcanic_Field pred:Name "Paricutin Volcanic Field" ;
 pred:Country "Mexico" ;
 pred:Region "Mexico" ;
 pred:Latitude "19.48" ;
@@ -3601,7 +3601,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:PenguinIsland pred:Name "Penguin Island" ;
+:Penguin_Island pred:Name "Penguin Island" ;
 pred:Country "Antarctica" ;
 pred:Region "Antarctica" ;
 pred:Latitude "-62.1" ;
@@ -3631,7 +3631,7 @@ pred:Type "Shield volcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:ProtectorShoal pred:Name "Protector Shoal" ;
+:Protector_Shoal pred:Name "Protector Shoal" ;
 pred:Country "Antarctica" ;
 pred:Region "Antarctica" ;
 pred:Latitude "-55.92" ;
@@ -3691,7 +3691,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:SanJorge pred:Name "San Jorge" ;
+:San_Jorge pred:Name "San Jorge" ;
 pred:Country "Portugal" ;
 pred:Region "Azores" ;
 pred:Latitude "38.65" ;
@@ -3701,7 +3701,7 @@ pred:Type "Fissure vent" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:SanJose pred:Name "San Jose" ;
+:San_Jose pred:Name "San Jose" ;
 pred:Country "Argentina" ;
 pred:Region "Chile-C" ;
 pred:Latitude "-33.782" ;
@@ -3711,7 +3711,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:SanMarcelino pred:Name "San Marcelino" ;
+:San_Marcelino pred:Name "San Marcelino" ;
 pred:Country "El Salvador" ;
 pred:Region "El Salvador" ;
 pred:Latitude "13.853" ;
@@ -3721,7 +3721,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:SanPedro pred:Name "San Pedro" ;
+:San_Pedro pred:Name "San Pedro" ;
 pred:Country "Chile" ;
 pred:Region "Chile-N" ;
 pred:Latitude "-21.88" ;
@@ -3731,7 +3731,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:SanSalvador pred:Name "San Salvador" ;
+:San_Salvador pred:Name "San Salvador" ;
 pred:Country "El Salvador" ;
 pred:Region "El Salvador" ;
 pred:Latitude "13.736" ;
@@ -3741,7 +3741,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:SantaAna pred:Name "Santa Ana" ;
+:Santa_Ana pred:Name "Santa Ana" ;
 pred:Country "El Salvador" ;
 pred:Region "El Salvador" ;
 pred:Latitude "13.853" ;
@@ -3751,7 +3751,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:SantaIsabel pred:Name "Santa Isabel" ;
+:Santa_Isabel pred:Name "Santa Isabel" ;
 pred:Country "Equatorial Guinea" ;
 pred:Region "Africa-W" ;
 pred:Latitude "3.58" ;
@@ -3811,7 +3811,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:SmithRock pred:Name "Smith Rock" ;
+:Smith_Rock pred:Name "Smith Rock" ;
 pred:Country "Japan" ;
 pred:Region "Izu Is-Japan" ;
 pred:Latitude "31.32" ;
@@ -3821,7 +3821,7 @@ pred:Type "Submarine volcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:SmithVolcano pred:Name "Smith Volcano" ;
+:Smith_Volcano pred:Name "Smith Volcano" ;
 pred:Country "Philippines" ;
 pred:Region "Luzon-N of" ;
 pred:Latitude "19.523" ;
@@ -3831,7 +3831,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:St_AndrewStrait pred:Name "St. Andrew Strait" ;
+:St_Andrew_Strait pred:Name "St. Andrew Strait" ;
 pred:Country "United States" ;
 pred:Region "Admiralty Is-SW Paci" ;
 pred:Latitude "-2.38" ;
@@ -3881,7 +3881,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:Tao_RusyrCaldera pred:Name "Tao-Rusyr Caldera" ;
+:Tao_Rusyr_Caldera pred:Name "Tao-Rusyr Caldera" ;
 pred:Country "Russia" ;
 pred:Region "Kuril Is" ;
 pred:Latitude "49.35" ;
@@ -3891,7 +3891,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:Telong_BurNi pred:Name "Telong, Bur Ni" ;
+:Telong_Bur_Ni pred:Name "Telong, Bur Ni" ;
 pred:Country "Indonesia" ;
 pred:Region "Sumatra" ;
 pred:Latitude "4.77" ;
@@ -3961,7 +3961,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:TristanDaCunha pred:Name "Tristan da Cunha" ;
+:Tristan_Da_Cunha pred:Name "Tristan da Cunha" ;
 pred:Country "Atlantic Ocean" ;
 pred:Region "Atlantic-S" ;
 pred:Latitude "-37.092" ;
@@ -3971,7 +3971,7 @@ pred:Type "Stratovolcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:TulluMoje pred:Name "Tullu Moje" ;
+:Tullu_Moje pred:Name "Tullu Moje" ;
 pred:Country "Ethiopia" ;
 pred:Region "Africa-NE" ;
 pred:Latitude "8.158" ;
@@ -4061,7 +4061,7 @@ pred:Type "Complex volcano" ;
 pred:Status "Historical" ;
 pred:Last "D2" ;
 
-:ZavaritzkiCaldera pred:Name "Zavaritzki Caldera" ;
+:Zavaritzki_Caldera pred:Name "Zavaritzki Caldera" ;
 pred:Country "Russia" ;
 pred:Region "Kuril Is" ;
 pred:Latitude "46.925" ;

@@ -141,7 +141,7 @@ def processCSV(filePath, withTitles=True, delimiter=',', titleLine=1, dataLine=2
 
 
 # TODO: don't hardcode these values
-title, values = processCSV("test/test4.csv", withTitles=True,
-                           delimiter=',', titleLine=1, dataLine=2)
+# title, values = processCSV("test/test4.csv", withTitles=True,
+#                           delimiter=',', titleLine=1, dataLine=2)
 
-serializeToTurtle("test/test4.ttl", values, elementTitlePredicateName=title)
+#serializeToTurtle("test/test4.ttl", values, elementTitlePredicateName=title)

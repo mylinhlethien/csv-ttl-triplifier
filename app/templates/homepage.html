@@ -17,7 +17,7 @@
             <div id="demo" class="collapse">
 
                 <div>
-                    <input type="checkbox" id="withTitles" name="withTitles" value="withTitles" checked onchange="checkboxOnChange();">
+                    <input type="checkbox" id="withTitles" name="withTitles" value="True" checked onchange="checkboxOnChange();">
                     <label for="withTitles">Does this CSV file have a title line?</label>
                 </div>
                 <script type="text/javascript">
@@ -37,11 +37,11 @@
                 <div class="form-example">
                     <label for="separator">Separator: </label>
                     <select name="separator" id="separator">
-                        <option value="space">space </option>
-                        <option value="tab">tab </option>
-                        <option value="comma" selected>comma ,</option>
-                        <option value="semicolon">semicolon ;</option>
-                        <option value="verticalbar">Vertical bar |</option>
+                        <option value=" ">space </option>
+                        <option value="    ">tab </option>
+                        <option value="," selected>comma ,</option>
+                        <option value=";">semicolon ;</option>
+                        <option value="|">Vertical bar |</option>
                     </select>
                 </div>
                 <div class="form-example">
