@@ -60,7 +60,7 @@ or if you use a Windows environment:
    flask run
 ```
 
-6. visualize the app on https://127.0.0.1:5000/
+6. visualize the app on http://127.0.0.1:5000/
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

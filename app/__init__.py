@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 import os
-import sys
+#import sys
 from serializer import processCSV, serializeToTurtle
 
 
@@ -34,15 +34,15 @@ def create_app():
         else:
             withTitles = result.getlist('withTitles')[0]
 
-        print(withTitles, delimiter, titleLine, dataLine, file=sys.stderr)
+        #print(withTitles, delimiter, titleLine, dataLine)
 
         # Manage file paths
         filename, file_extension = os.path.splitext(
             os.path.join("test", uploaded_file.filename))
         path = os.path.join("test", uploaded_file.filename)
-        print(path)
+        # print(path)
         turtlepath = filename + ".ttl"
-        print(turtlepath)
+        # print(turtlepath)
 
         # call the functions from serializer.py
         title, values = processCSV(path, withTitles=withTitles,

@@ -8,8 +8,8 @@
     <h1>CSV to TTL Converter</h1>
 
     <form action="{{ url_for('convertFile') }}" method="post" class="form-example" enctype="multipart/form-data">
-        <!--<button class=" btn" onclick="document.getElementById('getFile').click()">Choose file</button>-->
-        <input type='file' name="file" id="getFile" accept=".csv" required>
+        <button class=" btn" onclick="document.getElementById('getFile').click()">Choose file</button>
+        <input type='file' name="file" id="getFile" style="display: none;" accept=".csv" required>
 
         <div>
             <h3>Parameters</h3>
