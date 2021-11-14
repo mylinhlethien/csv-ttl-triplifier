@@ -1,72 +1,95 @@
 @prefix : <http://ex.org/data> .
 @prefix pred: <http://ex.org/pred#> .
 
-:1808 pred:Date "21-07-2015" ;
-pred:Itemdescription "tropical fruit" ;
+:1808 pred:memberNumber "1808" ;
+pred:date "21-07-2015" ;
+pred:itemDescription "tropical fruit" .
 
-:2552 pred:Date "05-01-2015" ;
-pred:Itemdescription "whole milk" ;
+:2552 pred:memberNumber "2552" ;
+pred:date "05-01-2015" ;
+pred:itemDescription "whole milk" .
 
-:2300 pred:Date "19-09-2015" ;
-pred:Itemdescription "pip fruit" ;
+:2300 pred:memberNumber "2300" ;
+pred:date "19-09-2015" ;
+pred:itemDescription "pip fruit" .
 
-:1187 pred:Date "12-12-2015" ;
-pred:Itemdescription "other vegetables" ;
+:1187 pred:memberNumber "1187" ;
+pred:date "12-12-2015" ;
+pred:itemDescription "other vegetables" .
 
-:3037 pred:Date "01-02-2015" ;
-pred:Itemdescription "whole milk" ;
+:3037 pred:memberNumber "3037" ;
+pred:date "01-02-2015" ;
+pred:itemDescription "whole milk" .
 
-:4941 pred:Date "14-02-2015" ;
-pred:Itemdescription "rolls/buns" ;
+:4941 pred:memberNumber "4941" ;
+pred:date "14-02-2015" ;
+pred:itemDescription "rolls/buns" .
 
-:4501 pred:Date "08-05-2015" ;
-pred:Itemdescription "other vegetables" ;
+:4501 pred:memberNumber "4501" ;
+pred:date "08-05-2015" ;
+pred:itemDescription "other vegetables" .
 
-:3803 pred:Date "23-12-2015" ;
-pred:Itemdescription "pot plants" ;
+:3803 pred:memberNumber "3803" ;
+pred:date "23-12-2015" ;
+pred:itemDescription "pot plants" .
 
-:2762 pred:Date "20-03-2015" ;
-pred:Itemdescription "whole milk" ;
+:2762 pred:memberNumber "2762" ;
+pred:date "20-03-2015" ;
+pred:itemDescription "whole milk" .
 
-:4119 pred:Date "12-02-2015" ;
-pred:Itemdescription "tropical fruit" ;
+:4119 pred:memberNumber "4119" ;
+pred:date "12-02-2015" ;
+pred:itemDescription "tropical fruit" .
 
-:1340 pred:Date "24-02-2015" ;
-pred:Itemdescription "citrus fruit" ;
+:1340 pred:memberNumber "1340" ;
+pred:date "24-02-2015" ;
+pred:itemDescription "citrus fruit" .
 
-:2193 pred:Date "14-04-2015" ;
-pred:Itemdescription "beef" ;
+:2193 pred:memberNumber "2193" ;
+pred:date "14-04-2015" ;
+pred:itemDescription "beef" .
 
-:1997 pred:Date "21-07-2015" ;
-pred:Itemdescription "frankfurter" ;
+:1997 pred:memberNumber "1997" ;
+pred:date "21-07-2015" ;
+pred:itemDescription "frankfurter" .
 
-:4546 pred:Date "03-09-2015" ;
-pred:Itemdescription "chicken" ;
+:4546 pred:memberNumber "4546" ;
+pred:date "03-09-2015" ;
+pred:itemDescription "chicken" .
 
-:4736 pred:Date "21-07-2015" ;
-pred:Itemdescription "butter" ;
+:4736 pred:memberNumber "4736" ;
+pred:date "21-07-2015" ;
+pred:itemDescription "butter" .
 
-:1959 pred:Date "30-03-2015" ;
-pred:Itemdescription "fruit/vegetable juice" ;
+:1959 pred:memberNumber "1959" ;
+pred:date "30-03-2015" ;
+pred:itemDescription "fruit/vegetable juice" .
 
-:1974 pred:Date "03-05-2015" ;
-pred:Itemdescription "packaged fruit/vegetables" ;
+:1974 pred:memberNumber "1974" ;
+pred:date "03-05-2015" ;
+pred:itemDescription "packaged fruit/vegetables" .
 
-:2421 pred:Date "02-09-2015" ;
-pred:Itemdescription "chocolate" ;
+:2421 pred:memberNumber "2421" ;
+pred:date "02-09-2015" ;
+pred:itemDescription "chocolate" .
 
-:1513 pred:Date "03-08-2015" ;
-pred:Itemdescription "specialty bar" ;
+:1513 pred:memberNumber "1513" ;
+pred:date "03-08-2015" ;
+pred:itemDescription "specialty bar" .
 
-:1905 pred:Date "07-07-2015" ;
-pred:Itemdescription "other vegetables" ;
+:1905 pred:memberNumber "1905" ;
+pred:date "07-07-2015" ;
+pred:itemDescription "other vegetables" .
 
-:2810 pred:Date "08-09-2015" ;
-pred:Itemdescription "butter milk" ;
+:2810 pred:memberNumber "2810" ;
+pred:date "08-09-2015" ;
+pred:itemDescription "butter milk" .
 
-:2867 pred:Date "12-11-2015" ;
-pred:Itemdescription "whole milk" ;
+:2867 pred:memberNumber "2867" ;
+pred:date "12-11-2015" ;
+pred:itemDescription "whole milk" .
 
-:3962 pred:Date "18-09-2015" .
-pred:Itemdescription "tropical fruit" .
+:3962 pred:memberNumber "3962" ;
+pred:date "18-09-2015" ;
+pred:itemDescription "tropical fruit" .
 

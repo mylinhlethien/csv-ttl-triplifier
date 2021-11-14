@@ -10,9 +10,19 @@ def sanitized(string: str, capitalize=True):
     Then, non-alphanumeric characters are replaced with underscores.
     '''
     inStr = string.strip()
+    # If capitalize = False and first letter is uppercase, make it lowercase
+    if not capitalize and inStr[0].isupper():
+        inStr = inStr[0].lower() + inStr[1:]
     if capitalize:
         inStr = inStr.title()
-    inStr.replace(' ', '')
+    # If underscores are found, replace them by spaces
+    # and capitalize the resulting string except the first letter
+    inStr = re.sub('_', ' ', inStr)
+    titledSubstr = ' '.join([w.title() if w.islower() else w for w in inStr.split()])
+    #titledSubstr = inStr[1:].title()
+    inStr = inStr[0] + titledSubstr[1:]
+    # Remove all spaces
+    inStr = inStr.replace(' ', '')
     return re.sub('[^0-9a-zA-Z]+', '_', inStr)
 
 
@@ -35,6 +45,7 @@ def serializeToTurtle(outPath, values, prefixData="http://ex.org/data", prefixPr
 
     The function writes the values to the output file in the .ttl format.
     For example, for the following input:
+    ```
     {
         '1': {
             'id': '1',
@@ -47,7 +58,9 @@ def serializeToTurtle(outPath, values, prefixData="http://ex.org/data", prefixPr
             'column2': 'd'
         }
     }
+    ```
     The resulting turtle file would be:
+    ```
     @prefix : <http://ex.org/data> .
     @prefix pred: <http://ex.org/pred#> .
     :1  :id "1" ;
@@ -56,6 +69,7 @@ def serializeToTurtle(outPath, values, prefixData="http://ex.org/data", prefixPr
     :2  :id "2" ;  
         :column1 "c" ;
         :column2 "d" .
+    ```
     '''
     # Create the output file
     with open(outPath, 'w', encoding='utf-8') as f:
@@ -78,14 +92,14 @@ def serializeToTurtle(outPath, values, prefixData="http://ex.org/data", prefixPr
             f.write('\n')
 
 
-def processCSV(filePath, withTitles=True, delimiter=',', titleLine=1, dataLine=2):
+def processCSV(filePath, withTitles=True, delimiter=',', titleLine=None, dataLine=None):
     '''
     A function that takes the following parameters:
     - CSV file path with UTF-8 encoding
     - withTitles: true by default
     - delimiter: ',' by default
-    - titleLine: line number of the title line (first line by default)
-    - dataLine: line number of the first line of data
+    - titleLine: line number of the title line (first non-empty line by default)
+    - dataLine: line number of the first line of data (first non-empty line by default, not including title if withTitles is set to true)
 
     The CSV file can have empty lines before the first line of data,
     and before the title line (which is optional, specified by withTitles).
@@ -105,6 +119,7 @@ def processCSV(filePath, withTitles=True, delimiter=',', titleLine=1, dataLine=2
     2,c,d
 
     The value returned by the function is:
+    ```
     {
         '1': {
             'id': '1',
@@ -117,6 +132,7 @@ def processCSV(filePath, withTitles=True, delimiter=',', titleLine=1, dataLine=2
             'column2': 'd'
         }
     }
+    ```
     '''
     # Open the input file and read the lines
     with open(filePath, 'r', encoding='utf-8') as f:
@@ -125,8 +141,26 @@ def processCSV(filePath, withTitles=True, delimiter=',', titleLine=1, dataLine=2
 
     # Store the titles in a variable. If the CSV has no titles, the predicate names will be col1, col2, etc.
     if withTitles:
+        if titleLine is None:
+            # find first non empty line
+            for i, line in enumerate(lines):
+                if line:
+                    titleLine = i + 1 # Lines are 1-indexed
+                    break
         titles = lines[titleLine - 1]
-    else:
+
+    # Find the data line. If dataline is None, find it automatically
+    # It will be the first non empty line after the title line if withTitles is set to true
+    if dataLine is None:
+        if withTitles:
+            dataLine = titleLine + 1
+        else:
+            dataLine = 0
+        while not lines[dataLine]:
+            dataLine += 1
+        dataLine += 1 # Lines are 1-indexed
+
+    if not withTitles:
         titles = ['col{}'.format(i)
                   for i in range(1, len(lines[dataLine - 1]) + 1)]
 
@@ -141,9 +175,8 @@ def processCSV(filePath, withTitles=True, delimiter=',', titleLine=1, dataLine=2
 
 
 # TODO: don't hardcode these values
-title, values = processCSV("test/test1.csv", withTitles=False,
-                           delimiter=';', titleLine=1, dataLine=3)
+title, values = processCSV("test/test2.csv",
+                           delimiter=',')
 
 # TODO default titleLine and dataLine. WithTitles default True
-# TODO fix serializer
-serializeToTurtle("test/test1.ttl", values, elementTitlePredicateName=title)
+serializeToTurtle("test/test2.ttl", values, elementTitlePredicateName=title)
