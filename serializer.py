@@ -71,10 +71,10 @@ def serializeToTurtle(outPath, values, prefixData="http://ex.org/data", prefixPr
             f.write('pred:{} "{}" ;\n'.format(
                 sanitized(elementTitlePredicateName, capitalize=False), escapeQuotes(key)))
             # Write the rest of the triples <subject pred:columnname "value">
-            for title in values[key]:
-                sanitizedTitle = sanitized(title)
+            for k, title in enumerate(values[key]):
+                sanitizedTitle = sanitized(title, capitalize=False)
                 f.write('pred:{} "{}" {}\n'.format(sanitizedTitle, escapeQuotes(
-                    values[key][title]), '.' if i == len(values) - 1 else ';'))
+                    values[key][title]), '.' if k == len(values[key]) - 1 else ';'))
             f.write('\n')
 
 
@@ -141,7 +141,9 @@ def processCSV(filePath, withTitles=True, delimiter=',', titleLine=1, dataLine=2
 
 
 # TODO: don't hardcode these values
-title, values = processCSV("test/test4.csv", withTitles=True,
-                           delimiter=',', titleLine=1, dataLine=2)
+title, values = processCSV("test/test1.csv", withTitles=False,
+                           delimiter=';', titleLine=1, dataLine=3)
 
-serializeToTurtle("test/test4.ttl", values, elementTitlePredicateName=title)
+# TODO default titleLine and dataLine. WithTitles default True
+# TODO fix serializer
+serializeToTurtle("test/test1.ttl", values, elementTitlePredicateName=title)
