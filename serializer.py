@@ -178,5 +178,4 @@ def processCSV(filePath, withTitles=True, delimiter=',', titleLine=None, dataLin
 title, values = processCSV("test/test2.csv",
                            delimiter=',')
 
-# TODO default titleLine and dataLine. WithTitles default True
 serializeToTurtle("test/test2.ttl", values, elementTitlePredicateName=title)
