@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}CSV to TTL Converter{% endblock %}
+
+{% block content %}
+<div style="margin: 3%;">
+    <h1>CSV to TTL Converter</h1>
+
+    <p style="color: green;">SUCCESS! You will find the output file in the folder "test".</p>
+    <a href="http://127.0.0.1:5000">
+        <button class="btn btn-success">Convert new file</button>
+    </a>
+
+    <div style="display: flex;">
+        <div style="float: left; width: 40%; overflow: auto; ">
+            <p>{{path}}</p>
+            <textarea style="overflow: auto; align-content: center; margin: 0px; width: 514px; height: 341px;">
+                {{csvString}}
+            </textarea>
+        </div>
+        <div style="float: left; width: 40%; overflow: auto; ">
+            <p>{{turtlepath}}</p>
+            <textarea style="overflow: auto; align-content: center; margin: 0px; width: 514px; height: 341px;">
+        {{turtleData}}
+    </textarea>
+        </div>
+    </div>
+
+
+
+</div>
+
+{% endblock %}

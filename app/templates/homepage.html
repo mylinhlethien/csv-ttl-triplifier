@@ -6,10 +6,13 @@
 
 <div style="margin: 3%;">
     <h1>CSV to TTL Converter</h1>
+    {% for message in get_flashed_messages() %}
+    <div class="alert-error" style="color: red;">Error: {{ message }}</div>
+    {% endfor %}
 
     <form action="{{ url_for('convertFile') }}" method="post" class="form-example" enctype="multipart/form-data">
-        <button class=" btn" onclick="document.getElementById('getFile').click()">Choose file</button>
-        <input type='file' name="file" id="getFile" style="display: none;" accept=".csv" required>
+        <!--<button class=" btn" onclick="document.getElementById('getFile').click()">Choose file</button>-->
+        <input type='file' name="file" id="getFile" accept=".csv" required>
 
         <div>
             <h3>Parameters</h3>
@@ -17,11 +20,11 @@
             <div id="demo" class="collapse">
 
                 <div>
-                    <input type="checkbox" id="withTitles" name="withTitles" value="True" checked onchange="checkboxOnChange();">
+                    <input type="checkbox" id="withTitles" name="withTitles" value="True" checked onchange="checkboxTitleOnChange();">
                     <label for="withTitles">Does this CSV file have a title line?</label>
                 </div>
                 <script type="text/javascript">
-                    function checkboxOnChange() {
+                    function checkboxTitleOnChange() {
                         if (document.getElementById("withTitles").checked) {
                             document.getElementById("title_line").disabled = false;
                         }
@@ -32,7 +35,7 @@
                 </script>
                 <div class="form-example">
                     <label for="title_line">Title line: </label>
-                    <input type="number" name="title_line" id="title_line" min="0" value="0">
+                    <input type="number" name="title_line" id="title_line" min="0" value="1">
                 </div>
                 <div class="form-example">
                     <label for="separator">Separator: </label>
@@ -44,13 +47,37 @@
                         <option value="|">Vertical bar |</option>
                     </select>
                 </div>
+                <input type="checkbox" id="firstLine" name="firstLine" value="True" unchecked onchange="checkboxFirstLineOnChange();">
+                <label for="first_line">Would you like to specify the first data line?</label>
+                <script type="text/javascript">
+                    function checkboxFirstLineOnChange() {
+                        if (document.getElementById("firstLine").checked) {
+                            document.getElementById("first_line").disabled = false;
+                        }
+                        else if (!document.getElementById("firstLine").checked) {
+                            document.getElementById("first_line").disabled = true;
+                        }
+                    }
+                </script>
                 <div class="form-example">
                     <label for="first_line">First data line: </label>
-                    <input type="number" name="first_line" id="first_line" min="0" value="0">
+                    <input type="number" name="first_line" id="first_line" min="0" value="0" disabled>
                 </div>
+                <input type="checkbox" id="lastLine" name="lastLine" value="True" unchecked onchange="checkboxLastLineOnChange();">
+                <label for="last_line">Would you like to specify the last data line?</label>
+                <script type="text/javascript">
+                    function checkboxLastLineOnChange() {
+                        if (document.getElementById("lastLine").checked) {
+                            document.getElementById("last_line").disabled = false;
+                        }
+                        else if (!document.getElementById("lastLine").checked) {
+                            document.getElementById("last_line").disabled = true;
+                        }
+                    }
+                </script>
                 <div class="form-example">
                     <label for="last_line">Last data line: </label>
-                    <input type="number" name="last_line" id="last_line" min="0" value="0">
+                    <input type="number" name="last_line" id="last_line" min="0" value="0" disabled>
                 </div>
             </div>
         </div>

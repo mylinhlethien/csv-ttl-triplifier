@@ -2,62 +2,62 @@
 @prefix pred: <http://ex.org/pred#> .
 
 :5_1 pred:col1 "5.1" ;
-pred:Col2 "3.5" ;
-pred:Col3 "1.4" ;
-pred:Col4 "0.2" ;
-pred:Col5 "setosa" ;
+pred:col2 "3.5" ;
+pred:col3 "1.4" ;
+pred:col4 "0.2" ;
+pred:col5 "setosa" .
 
 :4_9 pred:col1 "4.9" ;
-pred:Col2 "3.0" ;
-pred:Col3 "1.4" ;
-pred:Col4 "0.2" ;
-pred:Col5 "αβγ" ;
+pred:col2 "3.0" ;
+pred:col3 "1.4" ;
+pred:col4 "0.2" ;
+pred:col5 "αβγ" .
 
 :5_0 pred:col1 "5.0" ;
-pred:Col2 "3.4" ;
-pred:Col3 "1.5" ;
-pred:Col4 "0.2" ;
-pred:Col5 "setosa" ;
+pred:col2 "3.4" ;
+pred:col3 "1.5" ;
+pred:col4 "0.2" ;
+pred:col5 "setosa" .
 
 :7_0 pred:col1 "7.0" ;
-pred:Col2 "3.2" ;
-pred:Col3 "4.7" ;
-pred:Col4 "1.4" ;
-pred:Col5 "Здравствуйте" ;
+pred:col2 "3.2" ;
+pred:col3 "4.7" ;
+pred:col4 "1.4" ;
+pred:col5 "Здравствуйте" .
 
 :6_4 pred:col1 "6.4" ;
-pred:Col2 "3.2" ;
-pred:Col3 "5.3" ;
-pred:Col4 "2.3" ;
-pred:Col5 "virginica" ;
+pred:col2 "3.2" ;
+pred:col3 "5.3" ;
+pred:col4 "2.3" ;
+pred:col5 "virginica" .
 
 :6_9 pred:col1 "6.9" ;
-pred:Col2 "3.1" ;
-pred:Col3 "4.9" ;
-pred:Col4 "1.5" ;
-pred:Col5 "versicolor" ;
+pred:col2 "3.1" ;
+pred:col3 "4.9" ;
+pred:col4 "1.5" ;
+pred:col5 "versicolor" .
 
 :5_9 pred:col1 "5.9" ;
-pred:Col2 "3.0" ;
-pred:Col3 "4.2" ;
-pred:Col4 "1.5" ;
-pred:Col5 "versicolor" ;
+pred:col2 "3.0" ;
+pred:col3 "4.2" ;
+pred:col4 "1.5" ;
+pred:col5 "versicolor" .
 
 :5_8 pred:col1 "5.8" ;
-pred:Col2 "2.8" ;
-pred:Col3 "5.1" ;
-pred:Col4 "2.4" ;
-pred:Col5 "virginica" ;
+pred:col2 "2.8" ;
+pred:col3 "5.1" ;
+pred:col4 "2.4" ;
+pred:col5 "virginica" .
 
 :5_6 pred:col1 "5.6" ;
-pred:Col2 "2.8" ;
-pred:Col3 "4.9" ;
-pred:Col4 "2.0" ;
-pred:Col5 "virginica" ;
+pred:col2 "2.8" ;
+pred:col3 "4.9" ;
+pred:col4 "2.0" ;
+pred:col5 "virginica" .
 
 :7_7 pred:col1 "7.7" ;
-pred:Col2 "2.8" .
-pred:Col3 "6.7" .
-pred:Col4 "2.0" .
-pred:Col5 "virginica" .
+pred:col2 "2.8" ;
+pred:col3 "6.7" ;
+pred:col4 "2.0" ;
+pred:col5 "virginica" .
 
