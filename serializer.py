@@ -92,7 +92,7 @@ def serializeToTurtle(outPath, values, prefixData="http://ex.org/data", prefixPr
             f.write('\n')
 
 
-def processCSV(filePath, withTitles=True, delimiter=',', titleLine=None, dataLine=None):
+def processCSV(filePath, withTitles=True, delimiter=',', titleLine=None, dataLine=None, lastDataLine=None):
     '''
     A function that takes the following parameters:
     - CSV file path with UTF-8 encoding
@@ -138,6 +138,8 @@ def processCSV(filePath, withTitles=True, delimiter=',', titleLine=None, dataLin
     with open(filePath, 'r', encoding='utf-8') as f:
         reader = csv.reader(f, delimiter=delimiter)
         lines = list(reader)
+        if lastDataLine is not None:
+            lines = lines[:lastDataLine]
 
     # Store the titles in a variable. If the CSV has no titles, the predicate names will be col1, col2, etc.
     if withTitles:
@@ -175,7 +177,7 @@ def processCSV(filePath, withTitles=True, delimiter=',', titleLine=None, dataLin
 
 
 # TODO: don't hardcode these values
-title, values = processCSV("test/test2.csv",
-                           delimiter=',')
+title, values = processCSV("test/test1.csv",
+                           delimiter=';', lastDataLine=8, withTitles=False)
 
-serializeToTurtle("test/test2.ttl", values, elementTitlePredicateName=title)
+serializeToTurtle("test/test1.ttl", values, elementTitlePredicateName=title)
