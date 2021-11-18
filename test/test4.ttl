@@ -1,4 +1,4 @@
-@prefix : <http://ex.org/data> .
+@prefix : <http://ex.org/data/> .
 @prefix pred: <http://ex.org/pred#> .
 
 :Adatara pred:name "Adatara" ;

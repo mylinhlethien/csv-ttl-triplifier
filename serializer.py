@@ -34,7 +34,7 @@ def escapeQuotes(string):
     return string.replace('"', '')
 
 
-def serializeToTurtle(outPath, values, prefixData="http://ex.org/data", prefixPredicate="http://ex.org/pred#", elementTitlePredicateName="title"):
+def serializeToTurtle(outPath, values, prefixData="http://ex.org/data/", prefixPredicate="http://ex.org/pred#", elementTitlePredicateName="title"):
     '''
     A function that takes the following parameters:
     - outPath: path to the output file
@@ -43,6 +43,7 @@ def serializeToTurtle(outPath, values, prefixData="http://ex.org/data", prefixPr
         - values: a dictionary with the following structure:
             - keys: the titles of the rest of the columns (if no title, column name is col1, col2, etc.)
             - values: the corresponding value in the row for the given column
+
     The function writes the values to the output file in the .ttl format.
     For example, for the following input:
     ```
@@ -92,7 +93,7 @@ def serializeToTurtle(outPath, values, prefixData="http://ex.org/data", prefixPr
             f.write('\n')
 
 
-def processCSV(filePath, withTitles=True, delimiter=',', titleLine=None, dataLine=None):
+def processCSV(filePath, withTitles=True, delimiter=',', titleLine=None, dataLine=None, lastDataLine=None):
     '''
     A function that takes the following parameters:
     - CSV file path with UTF-8 encoding
@@ -100,8 +101,11 @@ def processCSV(filePath, withTitles=True, delimiter=',', titleLine=None, dataLin
     - delimiter: ',' by default
     - titleLine: line number of the title line (first non-empty line by default)
     - dataLine: line number of the first line of data (first non-empty line by default, not including title if withTitles is set to true)
+
     The CSV file can have empty lines before the first line of data,
     and before the title line (which is optional, specified by withTitles).
+
+
     The function reads the CSV values and returns a tuple with the following elements:
     * title of the first column
     * dictionary with the following structure:
@@ -109,10 +113,12 @@ def processCSV(filePath, withTitles=True, delimiter=',', titleLine=None, dataLin
     - values: a dictionary with the following structure:
         - keys: the titles of the rest of the columns (if no title, column name is col1, col2, etc.)
         - values: the corresponding value in the row for the given column
+
     For example, for this CSV file:
     id,column1,column2
     1,a,b
     2,c,d
+
     The value returned by the function is:
     ```
     {
@@ -133,6 +139,8 @@ def processCSV(filePath, withTitles=True, delimiter=',', titleLine=None, dataLin
     with open(filePath, 'r', encoding='utf-8') as f:
         reader = csv.reader(f, delimiter=delimiter)
         lines = list(reader)
+        if lastDataLine is not None:
+            lines = lines[:lastDataLine]
 
     # Store the titles in a variable. If the CSV has no titles, the predicate names will be col1, col2, etc.
     if withTitles:
@@ -170,7 +178,7 @@ def processCSV(filePath, withTitles=True, delimiter=',', titleLine=None, dataLin
 
 
 # TODO: don't hardcode these values
-# title, values = processCSV("test/test2.csv",
-#                           delimiter=',')
+# title, values = processCSV("test/test1.csv",
+#                           delimiter=';', lastDataLine=8, withTitles=False)
 
-#serializeToTurtle("test/test2.ttl", values, elementTitlePredicateName=title)
+#serializeToTurtle("test/test1.ttl", values, elementTitlePredicateName=title)

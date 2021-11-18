@@ -1,4 +1,4 @@
-@prefix : <http://ex.org/data> .
+@prefix : <http://ex.org/data/> .
 @prefix pred: <http://ex.org/pred#> .
 
 :5_1 pred:col1 "5.1" ;

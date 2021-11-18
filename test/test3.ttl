@@ -1,4 +1,4 @@
-@prefix : <http://ex.org/data> .
+@prefix : <http://ex.org/data/> .
 @prefix pred: <http://ex.org/pred#> .
 
 :PlaceDuPalaisRoyal_StHonore pred:adresse "PLACE DU PALAIS ROYAL / ST HONORE" ;

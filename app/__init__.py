@@ -40,7 +40,7 @@ def create_app():
         else:
             dataLine = int(result.getlist('first_line')[0])
 
-        # set lasrLine to None if = 0
+        # set lastLine to None if = 0
         if len(result.getlist('last_line')) == 0:
             lastLine = None  # None
         else:
@@ -59,7 +59,7 @@ def create_app():
         # call the functions from serializer.py
         try:
             title, values = processCSV(
-                path, withTitles=withTitles, delimiter=delimiter, titleLine=titleLine, dataLine=dataLine)
+                path, withTitles=withTitles, delimiter=delimiter, titleLine=titleLine, dataLine=dataLine, lastDataLine=lastLine)
 
             serializeToTurtle(turtlepath, values,
                               elementTitlePredicateName=title)
