@@ -3,7 +3,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Triplifier Project - CSV to TTL converter
 
-Describe project here
+This is a web application to convert CSV files to Turtle files. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -24,7 +24,7 @@ Describe project here
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+To run this Flask application, you will need to install
 * python3
 * pip
 
@@ -69,9 +69,7 @@ or if you use a Windows environment:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+The installation and user guides are linked [here](https://drive.google.com/drive/folders/1t-kmpxgK0tgYIDayytWee6Un2RPZyZqQ?usp=sharing)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -90,22 +88,17 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+[My-Linh Le Thien](https://www.linkedin.com/in/mylinhlethien/)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+[Carmen-Sofia Lopez](https://www.linkedin.com/in/sofialj/)
+
+[Nicolás de Ory Carmona](https://www.linkedin.com/in/nicolás-de-ory-carmona-54136a185/)
+
+[Manuela Affo](https://www.linkedin.com/in/manuela-affo-40838112a/)
+
+Project Link: [https://github.com/mylinhlethien/csv-ttl-triplifier](https://github.com/mylinhlethien/csv-ttl-triplifier)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
