@@ -1,3 +1,7 @@
+# 1/12/2021
+# DM3 - Web semantic
+# Nicolas DE ORY CARMONA - My-Linh LE THIEN - Carmen-Sofia LOPEZ - Manuela AFFO
+
 import csv
 import re
 
